@@ -35,9 +35,23 @@ a {
     text-decoration: none;
 }
 
+.hero img {
+    max-width: 99.35vw;
+}
+
 content {
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
 } 
+
+content img {
+    width: 400px;
+    margin-left: 50px;
+}
+
+content p {
+    margin: 50px;
+}
 
 h2 {
     padding: 50px;
@@ -46,6 +60,39 @@ h2 {
 section {
     padding: 50px;
     min-height: 100vh;
+    background-color: lightblue;
+}
+
+section img {
+    width: 300px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 50px;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+    height: fit-content;
+}
+
+#main-project {
+    width: 75vw;
+    height: 40vh;
+}
+
+#center-main-project {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 footer {
